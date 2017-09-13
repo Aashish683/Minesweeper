@@ -1,0 +1,90 @@
+.container
+{
+    position: absolute;
+    display: flex;
+    width: 75%;
+    height: 75%;
+    flex-flow: row wrap;
+    border: 2px solid grey;
+    background-color: ghostwhite
+}
+.container .inner
+{
+    position: absolute;
+    height: 5%;
+    width: 98%;
+    background-color: lightgrey;
+    top: 1%;
+    left: 0.75%;
+    border: 2px solid darkgray;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.board
+{
+       width: 97.85%;
+    height: 89%;
+    position: absolute;
+    top: 9%;
+    left: 0.80%;
+    border: 2px solid darkgray;
+    display: flex;
+    flex-flow: row wrap;
+}
+.board button
+{
+    
+}
+.timer
+{
+        position: absolute;
+    height: 80%;
+    width: 15%;
+    top: 7.3%;
+    left: 84%;
+    border: 1px solid black;
+    background-color: darkgrey;
+    text-align: center;
+    font-style: initial;
+    font-weight: 600;
+    font-family: fantasy;
+}
+.score
+{
+    position: absolute;
+    height: 80%;
+    width: 15%;
+    top: 7.3%;
+    left: 0.85%;
+    background-color: darkgrey;
+    border: 1px solid black;
+    text-align: center;
+    font-style: initial;
+    font-weight: 600;
+    font-family: fantasy;
+}
+.refresh
+{
+    position: absolute;
+    height: 80%;
+    width: 14%;
+    top: 7.3%;
+    left: 43.85%;
+    border: 1px solid black;
+    background-color: azure;
+    text-align: center;
+    font-style: initial;
+    font-weight: 600;
+    font-family: fantasy;
+    transition: background-color 1s linear;
+    cursor: pointer;
+}
+.refresh:hover
+{
+    background-color: aqua;
+    
+}
