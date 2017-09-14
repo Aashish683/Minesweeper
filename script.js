@@ -2,6 +2,7 @@
 var firstClick=0;
 var arr=[];
 var board=document.querySelector('.board');
+var scoreBoard=document.querySelector('.score');
 console.log(board);
 for(var i=0;i<256;i++)
     {
@@ -68,7 +69,7 @@ for(var i=0;i<256;i++)
             }
             //console.log(arr[i].top);
     }
-
+arr[0].flags=40;
 
 var bombIndex=[];
 for(i=0;i<45;i++)
@@ -171,6 +172,11 @@ function open(u)
 {
     u.style.backgroundColor="blue";
     u.pressed=true;
+    if(u.rightPressed==true)
+        {
+            arr[0].flags++;
+            scoreBoard.innerHTML=`${arr[0].flags}`;
+        }
 }
 function calculateBombs(j)
 {
