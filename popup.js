@@ -33,6 +33,7 @@ for(var i=0;i<256;i++)
                 scoreBoard.innerHTML=`${arr[0].flags}`;
             }
             }
+        return false;
     };
 }
 refresh.onclick=function(){
